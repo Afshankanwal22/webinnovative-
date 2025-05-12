@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+     <div >
+       <nav class="navbar  fixed-top shadow-sm">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="Llogo.png" alt="" id="imgl">
+            <img src="logo.avif" alt="" id="imgd">
+          </a>
+          <h5 class="code">(718) 750-8480</h5>
+      
+          <!-- Hamburger -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Offcanvas Menu -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <!-- Services Dropdown -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Website Design</a></li>
+                    <li><a class="dropdown-item" href="#">Website Development</a></li>
+                    <li><a class="dropdown-item" href="#">Logo Design</a></li>
+                    <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
+                    <li><a class="dropdown-item" href="#">SEO Services</a></li>
+                    <li><a class="dropdown-item" href="#">Content Writing</a></li>
+                    <li><a class="dropdown-item" href="#">App UI/UX Design</a></li>
+                    <li><a class="dropdown-item" href="#">App Development</a></li>
+                    <li><a class="dropdown-item" href="#">Video Animation</a></li>
+                    <li><a class="dropdown-item" href="#">Illustration</a></li>
+                    <li><a class="dropdown-item" href="#">Marketing Collateral</a></li>
+                    <li><a class="dropdown-item" href="#">Business Registration</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Packages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Showcase</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reviews</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+
+      <div class="togglethemedarklight" style="color: rgb(240, 155, 43);">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+            <p>Dark Mode</p>
+            <i class="fa-solid fa-arrow-right darkmodearrow"></i>
+            <p>Light Mode</p>
+            <span class="ball"></span>
+        </label>
+    </div>
+   
+      
+      <!-- Touch/Contact Floating Bar -->
+      <div class="touch">
+        <a href="tel:(718) 750-8480">(718) 750-8480</a>
+        <img id="dimg" src="https://cdn.shopify.com/s/files/1/0915/5221/9415/files/chat.png?v=1738274494" alt="Chat Dark" style="display:none;">
+        <img id="limg" src="https://cdn.shopify.com/s/files/1/0915/5221/9415/files/Lchat.png?v=1738274608" alt="Chat Light">
+        <a href="mailto:sales@webinnovatives.com">Sales@webinnovatives.com</a>
+      </div>
+
+
+       <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center justify-content-center" style="height: 100vh; color: black;">
+        <div class="container">
+          <div class="row rows">
+            <div class="col-12 head ">
+              <h1 class="display-4 head">Crafting Digital <div> Experiences with <span class="web "><u>Web Innovatives</u></span></div></h1>
+              <p class="lead">From sleek website designs to robust development, <b><i>Web Innovatives</i></b> deliver solutions that captivate your audience, enhance user experience, and drive measurable growth.</p>
+              <div class="cstm-btn">
+                <a href="#" class="btn bg-black text-white btn-lg mt-3 rounded-pill">Get Started</a>
+                <span> <i class="fa-solid fa-arrow-right custom-icon"></i></span>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    </div>
+   
+<!-- section-2 -->
+<section class="section-2">
+    <div class="container main-box ">
+      <div class="row box">
+        <div class="col-lg-3 col-md-6 col-sm-12 cont">
+        <div class="box">
+          <h2>400+</h2>
+          <h6>Projects Ordered</h6>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 cont">
+          <div class="box">
+            <h2>1000+</h2>
+            <h6>Happy &amp; Satisfied Clients</h6>
+          </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 cont">
+            <div class="box">
+              <h2>900+</h2>
+              <h6>Projects Completed</h6>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 cont">
+              <div class="box">
+                <h2>300+</h2>
+                <h6>Excellent feedback </h6>
+              </div>
+              </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section-5 -->
+  <div class="container-fluid d-flex section-5 flex-wrap">
+    <div class="col-lg-6 col-md-12">
+       <div> <h5 class="para">Tailored To Meet Your Unique Needs </h5></div>
+       <div><h1>Our One <span class="para1"><u>Window Branding</u></span> 
+        Solutions.</h1></div>
+        <div><p>Web Innovatives offers a hub of digital marketing services integrated with result-oriented strategies and unmatched expertise.</p></div>
+        <div class="cstm-btn"> <a href="#" class="btn bg-black text-white btn-lg mt-3 rounded-pill px-4">Read More</a>
+          <i class="fa-solid fa-arrow-right custom-icon"></i>
+        </div>
+
+        <div >
+          <img src="Lpackage.png" alt="" id="lightp">
+          <img src="package.webp" alt="" id="darkp">
+          <div class="mobile-packages">
+          <h4>Combo <br> Packages</h4>
+          <p style="color: black;">Complete Branding Solution</p>
+          <h3>$2,999</h3>
+          </div>
+        
+        </div>
+        <div id="darkimg">
+
+        </div>
+    </div>
+
+   <div class="col-lg-6 col-md-12 ">
+   <div class="services_wrap section-4">
+    <div class="services_detail active">
+        <button class="sbtn" id="sone">Click Here</button>
+        <h4>Website Design</h4>
+        <p><b>Web Innovatives - Transforming Ideas Into Engaging, High-Impact Websites.</b></p>
+        <p>Your website is the cornerstone of your brand's identity. At Web Innovatives, we design stunning, user-friendly, and mobile-responsive websites that captivate your audience and drive measurable results.</p>
+    </div>
+      
+    
+    <div class="services_detail">
+        <button class="sbtn" id="stwo">Click Here</button>
+        <h4>Logo Design</h4>
+        <p><b>Web Innovatives - Building Your Brand Recognition With Exceptional Logo Designs</b></p>
+        <p>Your logo should be as remarkable as your brand. We create custom designs that are visually striking, memorable, and perfectly aligned with your vision.</p>
+    </div>
+   
+
+    <div class="services_detail">
+        <button class="sbtn" id="sthree">Click Here</button>
+        <h4>Digital Marketing</h4>
+        <p><b>Strategic Digital Marketing That Delivers Tangible Results</b></p>
+        <p>Reach your target audience and drive real results with our customized digital marketing strategies. At Web Innovatives, we combine innovative techniques, multi-channel expertise, and in-depth analytics to grow your brand’s online presence and maximize ROI.</p>
+    </div>
+
+    <div class="services_detail">
+        <button class="sbtn" id="sfour">Click Here</button>
+        <h4>Mobile Apps</h4>
+        <p><b>Web Innovatives - Crafting User-Centric Mobile Apps for Enhanced Business Growth</b></p>
+        <p>At Web Innovatives, we specialize in developing custom mobile applications that offer seamless user experiences and align with your business objectives. Our expert team ensures your app is intuitive, engaging, and optimized for performance across all devices.</p>
+    </div>
+
+    <div class="services_detail">
+        <button class="sbtn" id="sfive">Click Here</button>
+        <h4>Video Animation</h4>
+        <p><b>Web Innovatives - Animating Your Vision with Creative Excellence</b></p>
+        <p>At Web Innovatives, we transform your concepts into dynamic animations that captivate and inform. Our team combines creativity with technical expertise to produce animations that leave a lasting impression.</p>
+    </div>
+
+    <div class="services_detail">
+        <button class="sbtn" id="ssix">Click Here</button>
+        <h4>Marketing Collateral</h4>
+        <p><b>Strategic Marketing Collateral That Amplifies Your Brand's Impact</b></p>
+        <p>At Web Innovatives, we develop customized marketing materials that effectively convey your brand's message and captivate your target audience. From persuasive brochures to engaging digital content, our expertly crafted collateral enhances your marketing efforts and drives meaningful engagement.</p>
+    </div>
+  </div>
+ </div>
+ </div>
+ <div class="main">
+  <img src="marq-one.webp" alt="" class="silde2">
+ <img src="Lmarq-one.png" alt="" class="silde1">
+ </div>
+
+ <!-- section 3 -->
+ <div class="section-3 ">
+    <div class="container-fluid">
+      <div class="container d-flex joinbrand ">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+        <img src="joinbrand.png" alt="" height="600px"></div>
+          <div class=" col-lg-6 col-md-6 col-sm-12">
+          <h4 class="para">Join the Leaders in Digital Innovation</h4>
+          <div class="headh1"><h2 class="">Get Maximum <span class="web"><u>Growth With 360</u></span> Marketing Digital Solutions</h2></div>
+          <div><p class="">At Web Innovatives, our 360° digital marketing approach makes us exceptional as we specialize in designing and developing custom websites, that bring your brand’s vision to life. Our expert team combines innovative design with robust development to craft your digital presence that is visually striking, user-friendly, and performance-driven.</p></div>
+          <div id="limg"><img src="secalcall.png" alt="" width="550px"></div>
+          <div id="dimg"><img src="seccall.avif" alt="" width="550px"></div>
+          <div><p class="paragh ">We go beyond web design and development, offering comprehensive services including marketing collateral, engaging video animations, and strategic digital marketing. Whether you need a responsive website, a captivating mobile app, or a full-fledged digital branding strategy, we deliver tailored solutions that drive growth, enhance visibility, and help your business stand out in a crowded digital landscape</p></div>
+          <div class="cstm-btn"><a href="#" class="btn bg-black text-white btn-lg mt-3 rounded-pill">Get Started</a>
+            <i class="fa-solid fa-arrow-right custom-icon"></i>
+          </div>
+      </div>   
+    </div>
+    </div>
+    </div>
+
+    <!-- section-6 -->
+    <div>
+        <div class="container d-flex section-6">
+            <div>
+                <h4 class="para">Our Customer-Centric Website Designs</h4>
+            <h2 class="fw-bold heads">
+                Hyper <span class="para"><u>-Focused Development </u></span>More Impactful UI/UX
+            </h2>
+            
+        </div>
+        <div class="container parah"><p>At Web Innovatives, a progressive mobile app development company we know how to entice the traffic and convert them into prospective leads. We create a seamless customer journey with rich and attention-grabbing designs that resonate with your brand’s personality.</p>
+        <div class="cstm-btn">
+        <a href="#" class="btn bg-black text-white btn-lg mt-3 rounded-pill">Get Started</a>
+        <i class="fa-solid fa-arrow-right custom-icon"></i>
+        </div>
+    </div>
+        </div>
+       </div>
+
+      
+       <div class="container part">
+        <ul class="nav menu" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"  data-images="w5.png,w6.png,w7.png"><i class="fa-solid fa-arrow-right"></i> Website Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab" data-images="logo-type1.webp,logo-type2.webp,logo-type3.webp"><i class="fa-solid fa-arrow-right"></i> Logo Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab" data-images="s1.webp,s2.webp,s3.webp"><i class="fa-solid fa-arrow-right"></i> Digital Marketing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab" data-images="ios1.webp,ios2.webp,ios3.webp"><i class="fa-solid fa-arrow-right"></i> Mobile App</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab" data-images="marketing-collateral-inner-portfolio-1.webp,marketing-collateral-inner-portfolio-2.webp,marketing-collateral-inner-portfolio-3.webp"><i class="fa-solid fa-arrow-right"></i> Marketing Collateral</a>
+        </li>
+      </ul>
+      </div>
+
+      <div class="card-group col-lg-12 col-md-6 col-sm-3 section-8 d-flex " id="imageContainer" style="display: none;">
+        <div class="">
+          <img src="w5.png" class="card-img-top" alt="...">
+          
+        </div>
+        <div class="">
+          <img src="w6.png" class="card-img-top" alt="..." >
+          
+        </div>
+        <div class="">
+          <img src="w7.png" class="card-img-top" alt="..." >
+         
+        </div>
+      </div>
+
+      <div class="card-group col-lg-12 col-md-6 col-sm-3 section-8 d-flex " id="imageContainer" style="display: none;">
+        <div class="">
+         
+      </div>
+
+      <div class="card-group col-lg-12 col-md-6 col-sm-3 section-8 d-flex " id="imageContainer" style="display: none;">
+       
+      </div>
+
+      <div class="card-group col-lg-12 col-md-6 col-sm-3 section-8 d-flex " id="imageContainer" style="display: none;">
+       
+      </div>
+
+      <div class="card-group col-lg-12 col-md-6 col-sm-3 section-8 d-flex " id="imageContainer" style="display: none;">  
+      </div>
+      <div class="main">
+        <img src="Lmarq-two (1).webp" alt="" style="width: 250%;" class="silde1">
+        <img src="marq-two (1).webp" alt="" style="width: 250%;" class="silde2">
+      </div>
+
+      <div>
+        <div class=" d-flex py-5 section-9">
+            <div class="container">
+            <div><h4 class="para ">Pricing Plan</h4></div>
+            <div><h2 class="fw-bolder">Our <span class="para"> <u>Budget Friendly</u></span> Packages</h2></div>
+            </div>
+            <div class="py-4"><p class="container  px-4">We offer customized service packages to meet your unique requirements while staying within your budget. Our flexible options ensure you receive personalized solutions without compromising on quality.</p>
+                <div class="container">
+                    <div class=" d-flex ">
+                        <h5 class="para px-2">Custom Website</h5>
+                         <h5 class="px-2">Logo Design</h5>
+                          <h5 class="px-2">Web App Solutions</h5></div>
+                 </div>
+                 <div class="container">
+                    <div class="d-flex">
+                        <h5 class="px-4">Video Animation</h5>
+                        <h5 class="px-3"> SEO</h5>
+                        <h5 class="px-3">E-Commerce Solutions</h5>
+                    </div>
+                 </div>
+            </div>  
+        </div>
+      </div>
+
+      <div class="d-flex container py-5">
+        <div>
+            <h5 class="para">Establishing a Dominant Digital Presence</h5>
+            <h1 class="fw-bold">Fortune <span class="para"><u>500 Companies From 40+ </u></span> Industries</h1>
+            <p class="parah">At Web Innovatives, we are adept at developing couturier websites that enable businesses to achieve exceptional growth and dominate search engine rankings. Whether it’s revamping your existing website, creating a unique logo, or developing a powerful marketing strategy, we've got you covered.</p>
+            <a href="#" class="btn bg-black text-white btn-lg mt-3 rounded-pill">Get Started</a>
+        </div>
+        <div>
+            <img src="systems.webp" alt=""style="width: 550px;">
+        </div>
+      </div>
+
+      <div class="d-flex container py-5">
+        <div>
+            <h5 class="para">Testimonials</h5>
+            <h1 class="fw-bold">Read What They Have To Say About <span class="para"><u>Working With Us</u></span></h1>
+        </div>
+        <div>
+            <p>
+             Get inspired by the happy and satisfied feedback we receive from our clients that depicts our true commitment.</p>
+             <img src="Lpartners.png" alt="">
+             <a href="#" class="btn bg-black text-white btn-lg mt-3 rounded-pill px-4">View All</a>
+        </div>
+      </div>
+
+      
+      <div class=" container d-flex ">
+        <div class="p-4 border1">
+            <h1 class="fw-bold">4.9</h1>
+           <i class="fa-solid fa-star" style="color: #f0a147;"></i>
+           <i class="fa-solid fa-star" style="color: #f0a147;"></i>
+           <i class="fa-solid fa-star" style="color: #f0a147;"></i>
+           <i class="fa-solid fa-star" style="color: #f0a147;"></i>
+           <i class="fa-solid fa-star" style="color: #f0a147;"></i>
+
+            <p class="ps">300+ clients for Design and Marketing Services on various platforms.</p>
+            <img src="pepal-group.png" alt="">
+        </div>
+
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner ">
+        
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="testimonial-card  p-4">
+                <i class="fa-solid fa-quote-left icon" style="font-size: 130px;" ></i>
+                <p class="para"><i>Keep up the good work! Web Innovatives is the right solution if you truly want to establish your business firmly in such a fast-paced digital world. Their strategies are thoughtful and result-driven. I would surely recommend them to my fellows.</i></p>
+                <div class="info  gap-3 mt-3">
+                  <img src="Belle.webp" class="rounded-circle" style="width: 60px;">
+                  <div>
+                    <h5>Belle Boyd</h5>
+                    <span>Senior Content Creator</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="testimonial-card  p-4">
+                <i class="fa-solid fa-quote-left icon " style="font-size: 130px;"></i>
+                <p class="para"><i>Great work! I’m grateful to have worked with Web Innovatives. The experts are so full of ideas. They have helped me grow my business and have backed me up with valuable resources</i></p>
+                <div class="info gap-3 mt-3">
+                  <img src="trina.webp" class="rounded-circle" style="width: 60px;">
+                  <div>
+                    <h5>Trina Gill</h5>
+                    <span>Senior Publisher</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="testimonial-card p-4">
+                <i class="fa-solid fa-quote-left icon" style="font-size: 130px;"></i>
+                <p class="para"><i>Amazing and incredible. The professionals at Web Innovatives have truly nailed the website. My eCommerce store looks stunning and is decked with incredible automation tools. The functionality is super speedy and seamless.</i></p>
+                <div class="info  gap-3 mt-3">
+                  <img src="tyron.webp" class="rounded-circle" style="width: 60px;">
+                  <div>
+                    <h5>Tyrone Turner</h5>
+                    <span>Editor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+              <div class="testimonial-card  p-4">
+                <i class="fa-solid fa-quote-left icon" style="font-size: 130px;" ></i>
+                <p class="para"><i>Good work! I’ll surely work with them again. I’m flattered to see my business flourish so incredibly. All the marketing channels are booming and the best part is their affordability. Thank you once again.</i></p>
+                <div class="info gap-3 mt-3">
+                  <img src="Milton.webp" class="rounded-circle" style="width: 60px;">
+                  <div>
+                    <h5>Milton Sims</h5>
+                    <span>Brand Manager</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main">
+        <img src="Lmarq-three (1).webp" alt="" style="width: 250%;" class="silde1">
+      <img src="marq-three.webp" alt="" style="width: 250%;" class="silde2" ></div>
+      
+      <div class="d-flex container py-5">
+        <div>
+            <h4 class="para">Contact Us</h4>
+            <h2>Success Is A <span class="para"><u>Team Play</u></span> Right?</h2>
+            <p class="parag">Contact us by using the form below or send us an email.Pour in your queries, we are happy to serve you.</p>
+            <img src="pepal-group.png" alt="">
+            <h2 class="para"><i>Let’s Work Together!</i></h2>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12">
+          <form class="formvalidate">
+              <div class="row g-3">
+                  <div class="col-md-6">
+                      <input type="text" class="forminp form-control" id="your-name" name="your-name" placeholder="First Name" required="">
+                  </div>
+                  <div class="col-md-6">
+                      <input type="text" class="forminp form-control" id="last-name" name="last-name" placeholder="Last Name" required="">
+                  </div>
+                  <div class="col-md-6">
+                      <input type="number" class="forminp form-control" id="phone-number" name="phone-number" placeholder="Phone Number" required="">
+                  </div>
+                  <div class="col-md-6">
+                      <input type="email" class="forminp form-control" id="email" name="email" placeholder="Email Address" required="">
+                  </div>
+                  <div class="col-12">
+                      <textarea class="forminp form-control" id="your-message" name="your-message" rows="5" placeholder="Message" required=""></textarea>
+                  </div>
+                  <div class="col-12">
+                      <div class="row">
+                          <div class="col-12 text-center">
+                            <div class="cstm-btn">
+                              <a href="#" class="btn bg-black text-white btn-lg mt-3 rounded-pill">Submit</a>
+                              <i class="fa-solid fa-arrow-right custom-icon"></i>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </form>
+      </div>
+      </div>
+
+    
+      <div>
+        <div class="bigtext" >
+          <h1 class="heading">
+            
+            Let's Work Together
+          </h1>
+          <img src="Lconsultation.png" alt=" "class="imgcriclel">
+          <img src="consultation (1).avif" alt="" class="imgcricled">
+        </div>
+        
+      </div>
+
+
+
+
+<footer class="footer-section  pt-5">
+  <div class="">
+    <!-- Newsletter Signup -->
+    <div class="row align-items-center pb-4 ">
+      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <h3 class="widget-title mb-0">
+          Get the <span class="alt-text" style="color: #f0a147; text-decoration: underline;">latest inspiration</span> &amp; insights
+        </h3>
+      </div>
+      <div class="col-md-6">
+        <form >
+          <div class="input-group">
+            <input 
+              type="email" 
+              class="form-control" 
+              placeholder="Enter your email" 
+              id="newsletter-email" 
+              name="email" 
+              aria-label="Email address"
+              required
+            >
+            <button class="btn " type="submit" aria-label="Subscribe">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+   
+  <!-- Footer Links -->
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5 text-center text-md-start">
+    <div class="col mb-4 text-center ">
+      <h3>Quick Link</h3>
+      <ul class="nav flex-column text-black" style=" text-align: center;">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About us</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Packages</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Portfolio</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Reviews</a></li>
+      </ul>
+    </div>
+    
+    <div class="col mb-4 text-center">
+      <h3>Services</h3>
+      <ul class="nav flex-column text-black" style=" text-align: center;">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Website Development</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Logo Design</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Animation</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Illustration</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Marketing Collateral</a></li>
+      </ul>
+    </div>
+    
+    <div class="col mb-4 text-center">
+      <h3>Information</h3>
+      <ul class="nav flex-column text-black" style=" text-align: center;">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Digital Marketing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Creative Copywriting</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Mobile Apps</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">SEO Service</a></li>
+      </ul>
+    </div>
+    
+    <div class="col mb-4 text-center ">
+      <h3>Contact Info</h3>
+      <ul class="nav flex-column text-black" style=" text-align: center;">
+        <li class="nav-item mb-2"><a href="tel:7187508480" class="nav-link p-0">(718) 750-8480</a></li>
+        <li class="nav-item mb-2"><a href="mailto:sales@webinnovatives.com" class="nav-link p-0">sales@webinnovatives.com</a></li>
+        <li class="nav-item mb-2"><span class="nav-link p-0 text-dark">Suit #8035, 99 Hudson St, 5th floor,</span></li>
+        <li class="nav-item mb-2"><span class="nav-link p-0 text-dark">New York, NY 10013, USA</span></li>
+        <li class="nav-item mb-2"><img src="cards.avif" alt="Accepted payment cards" class="img-fluid" style="width:100%;"></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Bottom Bar -->
+  <div class="d-flex flex-column flex-md-row  align-items-center Copyright  pt-4 pb-3">
+    <p class="mb-2 mb-md-0 small px-2 ">Copyright © 2025 All rights reserved Webinnovatives</p>
+   
+      
+    <div class="small  text-md-end">
+      Parent Company The Tech Tribe LLC &nbsp;|&nbsp; 
+      <a href="#" class="text-decoration-underline text-dark">Privacy</a> &nbsp;|&nbsp; 
+      <a href="#" class="text-decoration-underline text-dark">Terms Of Use</a> &nbsp;|&nbsp; 
+      <a href="#" class="text-decoration-underline text-dark">Refund Policy</a> &nbsp;|&nbsp; 
+      <a href="#" class="text-decoration-underline text-dark">Opt Out Option</a>
+    </div>
+  </div>
+</div>
+</footer>
+    
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
