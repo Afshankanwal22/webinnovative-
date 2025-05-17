@@ -1,19 +1,19 @@
-const checkbox = document.getElementById('checkbox');
+// const checkbox = document.getElementById('checkbox');
 
-window.addEventListener('DOMContentLoaded', () => {
-  document.body.classList.add('dark-mode');
-  checkbox.checked = false;
-});
+// window.addEventListener('DOMContentLoaded', () => {
+//   document.body.classList.add('dark-mode');
+//   checkbox.checked = false;
+// });
 
-checkbox.addEventListener('change', () => {
-  if (checkbox.checked) {
-    document.body.classList.remove('dark-mode');
-    document.body.classList.add('light-mode');
-  } else {
-    document.body.classList.remove('light-mode');
-    document.body.classList.add('dark-mode');
-  }
-});
+// checkbox.addEventListener('change', () => {
+//   if (checkbox.checked) {
+//     document.body.classList.remove('dark-mode');
+//     document.body.classList.add('light-mode');
+//   } else {
+//     document.body.classList.remove('light-mode');
+//     document.body.classList.add('dark-mode');
+//   }
+// });
  
 
 
@@ -62,6 +62,48 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+
+  
+  // const checkbox = document.getElementById('checkbox');
+  // const imageContainer = document.getElementById('imageContainer');
+  
+  // function loadModeImages(mode) {
+  //   imageContainer.innerHTML = ''; // Clear current images
+  //   let images = [];
+  
+  //   if (mode === 'dark') {
+  //     images = ['dark1.jpg']; // Replace with your actual dark mode image URLs
+  //   } else {
+  //     images = ['light1.jpg']; // Replace with your actual light mode image URLs
+  //   }
+  
+  //   images.forEach(src => {
+  //     const img = document.createElement('img');
+  //     img.src = src;
+  //     img.className = 'card-img-top';
+  //     imageContainer.appendChild(img);
+  //   });
+  // }
+  
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.add('dark-mode');
+    checkbox.checked = false;
+    loadModeImages('dark'); // Load dark mode images on initial load
+  });
+  
+  checkbox.addEventListener('change', () => {
+    if (checkbox.checked) {
+      document.body.classList.remove('dark-mode');
+      document.body.classList.add('light-mode');
+      loadModeImages('light'); // Load light mode images
+    } else {
+      document.body.classList.remove('light-mode');
+      document.body.classList.add('dark-mode');
+      loadModeImages('dark'); // Load dark mode images
+    }
+  });
+  
 
 
   

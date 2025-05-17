@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    /* overflow: hidden; */
   }
   body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Robo, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -93,15 +94,14 @@ body.light div#menuToggle {
     background: #f09b2b;
     transition: .4s;
 }
-body.light-mode .navi,
+/* body.light-mode .navi,
 .hero-section {
-  /* background-image: url('Lherobanner.png') !important;  */
+  background-image: url('Lherobanner.png') !important; 
 
 }
 body.dark-mode .navi,.hero-section{
-  /* background-image:url("herobanner.png") !important ; */
-}
-
+  background-image:url("herobanner.png") !important ;
+} */
 
 .offcanvas-body {
   padding-top: 20px;
@@ -633,10 +633,10 @@ body.dark-mode .navi,.hero-section{
 
   /* section-6 */
   body.dark-mode .section-6 h4{
-    color: rgb(191, 247, 71);
+    color: rgb(191, 247, 71) !important;
   }
   body.dark-mode .section-6 u{
-    color: rgb(191, 247, 71);
+    color: rgb(191, 247, 71) !important;
   }
   body.dark-mode .section-6 a{
     background-color: white !important;
@@ -646,7 +646,20 @@ body.dark-mode .navi,.hero-section{
     background-color: rgb(191, 247, 71) !important;
     color: #000 !important;
   }
-  part{
+  body.light-mode .para u{
+    color: rgb(240, 155, 43) !important;
+  }
+  body.light-mode .para{
+    color: rgb(240, 155, 43) !important;
+  }
+  body.light-mode .black{
+    color: black !important;
+  }
+  body.light-mode .fa-star{
+    color: #f0a147 !important;
+  }
+
+  .part{
     max-width: 900px;
   }
   .menu{
@@ -938,8 +951,13 @@ body.light-mode .navbar-brand #imgl {
   display: block !important;
 }
 body.dark-mode .code {
-  color: black;
-  background: white;
+  color: black !important;
+  background: white !important;
+}
+body.light-mode .code{
+  color: white !important;
+  background: black;
+  
 }
 body.dark-mode .navbar-toggler{
   background-color: rgb(191, 247, 71);
@@ -1174,13 +1192,257 @@ body.dark-mode .fa-star{
 .samll a{
   padding-left: 50px !important;
 }
+.main {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.silde1,
+.silde2 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container, .row, .col, .section-9, .section-10, .section-11, .section-12 {
+  max-width: 100%;
+  /* overflow-x: hidden; */
+}
 
 
 
 
 @media screen and (min-width:350px) and (max-width:600px) {
-  .hero-section{
-    max-width: 100vw !important;
+ .togglethemedarklight {
+    display: none !important;
   }
+
+  .touch {
+    display: none;
+  }
+
+  .hero-section {
+    padding: 60px 20px 30px;
+    margin: 0;
+    min-width:200%;
+  }
+
+  .head {
+    padding: 0;
+  }
+
+  .head h1 {
+    padding-top: 50px;
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 1.3;
+  }
+  .web u {
+    text-decoration-thickness: 2px;
+  }  
+
+  .lead {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .cstm-btn {
+     margin-top: 25px;
+  }
+  .cstm-btn a {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+
+  .custom-icon {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+.section-2{
+  width: 200% !important;
+  margin-left: 20px !important;
+ 
+}
+  .box {
+    margin: 15px 0;
+    text-align: center;
+  }
+  .box h2 {
+   font-size: 44px;
+    font-weight: bold;
+  }
+
+  .box h6 {
+   font-size: 24px;
+    margin-top: 8px;
+  }
+
+  .section-5 {
+     padding: 0 15px;
+     min-width: 200%;
+  }
+
+  .para {
+    font-size: 19px;
+  }
+
+  .section-5 h1 {
+    font-size: 50px;
+    width: 100%;
+  }
+
+  .section-5 p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .section-5 img {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .section-4 h4 {
+    font-size: 32px;
+  }
+
+  .section-4 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .joinbrand {
+    flex-direction: column;
+    align-items: center;
+   min-width: 200%;
+  }
+
+  .joinbrand img {
+    margin: 0 auto;
+    height: auto;
+    margin-left: 30px;
+  }
+
+  .joinbrand .para,
+  .joinbrand .headh1,
+  .joinbrand p,
+  .joinbrand .cstm-btn {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .section-6 {
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 20px;
+    min-width: 200%;
+  }
+
+  .section-6 .para {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .section-6 .heads,u {
+    font-size: 40px;
+    /* text-align: center; */
+    width: 100%;
+  }
+
+  .section-6 p {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .card-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .card-group img {
+    width:200% !important;
+    padding: 0;
+  }
+  .section-9{
+     display: flex;
+     flex-direction: column;
+    min-width: 220% !important;
+    padding-right: 0;
+    padding-left: 0;
   
+  }
+
+  
+  .section-10  {
+   min-width: 200% !important;
+    padding-left: 0;
+    padding-right: 0;
+    display: block !important;
+  }
+  .section-10 img{
+    width: 100% !important;
+  }
+  .section-11{
+    min-width: 200% !important;
+    padding-left: 0;
+    padding-right: 0;
+    display: block !important;
+  }
+  .section-11 img{
+    width: 100% !important;
+  }
+  .section-12{
+    /* min-width: 200% !important; */
+    padding-left: 0;
+    padding-right: 0;
+    display: block !important;
+  }
+  .section-12 img{
+    width: 50% !important;
+  }
+  .border1{
+    width: 200% !important;
+  }
+  .border1 h1{
+    font-size: 40px !important;
+  }
+  .border1 i{
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+  .slide{
+    min-width: 220% !important;
+    
+    
+  }
+  .slide img{
+    width: 10% !important;
+  }
+  .section-13{
+    display: block !important;
+    min-width: 200% !important;
+
+  }
+  .section-13 img{
+    width: 50% !important;
+  }
+  .bigtext img {
+    width: 90% !important;
+    margin-top: 100px;
+  }
+  .heading{
+    font-size: 130px;
+    min-width: 220% !important;
+  }
+
+  .cstm-btn {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
